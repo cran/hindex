@@ -1,0 +1,14 @@
+18098464778601992ae579c99aa6e347 *DESCRIPTION
+71fba8dca5726ceaabc5c2205e02bb01 *LICENSE
+e08c95a31cab59df98c92be3565cdcf2 *NAMESPACE
+987aa30f353acd4cd4d17649af6d8096 *NEWS.md
+4bd3f41a2115eb8fe6d44c3326c61230 *R/plot_hsim.R
+9eddde37e2c7e2145b7faa540a09e05d *R/simulate_hindex.R
+6b2869baf3c04c8473dce47657dce4d9 *README.md
+3339767dca3d48aebeda587c77a6f884 *man/figures/README-example-1.png
+38e8bfad5ee0a0da387d9d7a220905c9 *man/figures/README-example-2.png
+8eaabfd50f2e8d8a770f020dfd9ee28b *man/figures/README-example-3.png
+0d8683b77b962300aba3fa0dfc6b41cf *man/plot_hsim.Rd
+92c322cf8aad4b69c3b0f580a5210840 *man/simulate_hindex.Rd
+3fb06c3f7aa35ba005930408cf0f62e8 *tests/testthat.R
+266faa47a777b31c8af31683bb98b18c *tests/testthat/test-simulate_hindex.R
