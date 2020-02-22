@@ -4,9 +4,17 @@
 \alias{plot_hsim}
 \title{Plot the result of simulate_hindex}
 \usage{
-plot_hsim(simdata, plot_hindex = FALSE, plot_halpha = FALSE,
-  group_boundaries = NULL, exclude_group_boundaries = FALSE,
-  plot_group_diffs = FALSE)
+plot_hsim(
+  simdata,
+  plot_hindex = FALSE,
+  plot_halpha = FALSE,
+  plot_toppapers = FALSE,
+  plot_mindex = FALSE,
+  subgroups = FALSE,
+  group_boundaries = NULL,
+  exclude_group_boundaries = FALSE,
+  plot_group_diffs = FALSE
+)
 }
 \arguments{
 \item{simdata}{The result of a simulation returned
@@ -18,10 +26,21 @@ plotted.}
 \item{plot_halpha}{If this parameter is set to TRUE, the h-alpha values are
 plotted.}
 
-\item{group_boundaries}{A list of vectors or a vector of integers specifying
-the groups for plotting the h-index/h-alpha values separately for each of
-these groups. The groups are defined based on the initial h-index of the
-agents. If a list is specified, each element must be a vector of length 2
+\item{plot_toppapers}{If this parameter is set to TRUE, the numbers of
+top-10\% papers are plotted.}
+
+\item{plot_mindex}{If this parameter is set to TRUE, the mindex values are
+plotted.}
+
+\item{subgroups}{If this parameter is set to TRUE, the subgroups in simdata
+are considered for grouping plotting the index values separately for each of
+these groups.}
+
+\item{group_boundaries}{Alternative to subgroups for specifying groups of
+scientists for plotting the index values separately for these groups. Here,
+the groups are specified based on the initial h-index of the agents. group_boundaries
+must be a list of vectors or a vector of integers specifying the groups.
+If a list is specified, each element must be a vector of length 2
 representing the lower and the upper bound for the initial h-index (if the
 boundaries are included in the corresponding intervals is specified by the
 exclude_group_boundaries parameter).
